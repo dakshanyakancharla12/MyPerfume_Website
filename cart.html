@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyPerfume - Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ✦ MyPerfume
+        </div>
+
+        <nav>
+
+            <a href="home.html">Home</a>
+
+            <a href="products.html">Shop</a>
+
+            <a href="customize.html">Customize</a>
+
+            <a href="wishlist.html">Wishlist</a>
+
+            <a href="cart.html" class="active">
+                🛒
+                <span id="cartCount">0</span>
+            </a>
+
+            <a href="profile.html">Profile</a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================================
+         CART
+    ================================= -->
+
+    <main class="cart-page">
+
+        <div class="cart-header">
+
+            <h1>Your Cart</h1>
+
+            <p>
+                Review your selected fragrances before checkout.
+            </p>
+
+        </div>
+
+
+        <!-- CART PRODUCTS -->
+
+        <div id="cartContainer" class="cart-container">
+        </div>
+
+
+        <!-- EMPTY CART -->
+
+        <div id="emptyCart" class="empty-cart">
+
+            <h2>Your cart is empty</h2>
+
+            <p>
+                Add your favorite perfumes to see them here.
+            </p>
+
+            <a href="products.html">
+                Continue Shopping
+            </a>
+
+        </div>
+
+
+        <!-- CART SUMMARY -->
+
+        <div id="cartSummary" class="cart-summary">
+
+            <div class="summary-row">
+
+                <span>Total Items</span>
+
+                <span id="totalItems">
+                    0
+                </span>
+
+            </div>
+
+
+            <div class="summary-row total-row">
+
+                <span>Total</span>
+
+                <span id="totalPrice">
+                    ₹0
+                </span>
+
+            </div>
+
+
+            <button
+                class="checkout-btn"
+                onclick="window.location.href='checkout.html'">
+
+                Proceed to Checkout
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+        © 2026 MyPerfume. All rights reserved.
+
+    </footer>
+
+
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

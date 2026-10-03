@@ -1,0 +1,293 @@
+/* ==============================
+   AUTHENTICATION PAGE
+================================ */
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    background: #fffaf8;
+}
+
+
+/* ==============================
+   LEFT IMAGE
+================================ */
+
+.auth-image {
+    width: 55%;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(50, 20, 20, 0.12),
+            rgba(50, 20, 20, 0.12)
+        ),
+        url("../images/perfume-bg.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Brand Text */
+
+.brand-content {
+    text-align: center;
+
+    color: white;
+
+    padding: 40px;
+
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.brand-content h1 {
+    font-family: Georgia, serif;
+
+    font-size: 58px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.brand-content p {
+    font-size: 18px;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ==============================
+   RIGHT FORM
+================================ */
+
+.auth-form {
+    width: 45%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 430px;
+}
+
+
+/* Heading */
+
+.auth-form h2 {
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    font-weight: 500;
+
+    color: #3d2929;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #8a7777;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+}
+
+
+/* ==============================
+   INPUTS
+================================ */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #4d3a3a;
+
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #dfceca;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #333;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+.input-group input:focus {
+    border-color: #b87575;
+
+    box-shadow:
+        0 0 0 3px rgba(184, 117, 117, 0.1);
+}
+
+
+/* ==============================
+   BUTTON
+================================ */
+
+.auth-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #9b5d61;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    background: #7f484d;
+
+    transform: translateY(-1px);
+}
+
+
+/* ==============================
+   MESSAGES
+================================ */
+
+#loginMessage,
+#signupMessage {
+    min-height: 20px;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   SWITCH LOGIN / SIGNUP
+================================ */
+
+.switch-page {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+.switch-page a {
+    color: #9b5d61;
+
+    font-weight: 600;
+
+    margin-left: 4px;
+}
+
+.switch-page a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media (max-width: 800px) {
+
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-image {
+        width: 100%;
+
+        min-height: 300px;
+
+        height: 35vh;
+    }
+
+    .brand-content h1 {
+        font-size: 42px;
+    }
+
+    .brand-content p {
+        font-size: 15px;
+    }
+
+    .auth-form {
+        width: 100%;
+
+        padding: 40px 25px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .auth-image {
+        min-height: 250px;
+    }
+
+    .brand-content h1 {
+        font-size: 35px;
+    }
+
+    .auth-form {
+        padding: 35px 20px;
+    }
+
+    .auth-form h2 {
+        font-size: 30px;
+    }
+}

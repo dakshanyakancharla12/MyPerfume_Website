@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MyPerfume - Customize</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customize.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header class="navbar">
+
+    <div class="logo">
+        ✦ MyPerfume
+    </div>
+
+    <nav>
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Shop
+        </a>
+
+        <a href="customize.html" class="active">
+            Customize
+        </a>
+
+        <a href="wishlist.html">
+            Wishlist
+        </a>
+
+        <a href="cart.html">
+            🛒
+            <span id="cartCount">0</span>
+        </a>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+    <!-- ================================
+         CUSTOMIZE PAGE
+    ================================= -->
+
+    <main class="customize-page">
+
+        <div class="customize-header">
+
+            <h1>
+                Create Your Own Perfume
+            </h1>
+
+            <p>
+                Choose your favorite fragrance and create
+                your own signature scent.
+            </p>
+
+        </div>
+
+
+        <div class="customize-container">
+
+
+            <!-- =========================
+                 OPTIONS
+            ========================== -->
+
+            <div class="customize-form">
+
+
+                <!-- PERFUME NAME -->
+
+                <div class="form-group">
+
+                    <label>
+                        Perfume Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="perfumeName"
+                        placeholder="Enter your perfume name"
+                    >
+
+                </div>
+
+
+                <!-- FRAGRANCE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Fragrance Type
+                    </label>
+
+                    <select id="fragrance">
+    <option value="">Select fragrance type</option>
+    <option value="Floral">Floral</option>
+    <option value="Fresh">Fresh</option>
+    <option value="Sweet">Sweet</option>
+    <option value="Woody">Woody</option>
+</select>
+
+                </div>
+
+
+                <!-- SCENT NOTE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Scent Note
+                    </label>
+
+                    <select id="scent">
+                        <option value="">Select scent note</option>
+
+                        <option value="Rose">
+                            Rose
+                        </option>
+
+                        <option value="Vanilla">
+                            Vanilla
+                        </option>
+
+                        <option value="Lavender">
+                            Lavender
+                        </option>
+
+                        <option value="Jasmine">
+                            Jasmine
+                        </option>
+
+                        <option value="Oud">
+                            Oud
+                        </option>
+
+                        <option value="Citrus">
+                            Citrus
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- SIZE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Bottle Size
+                    </label>
+
+                    <select id="size">
+                        <option value="">Select bottle size</option>
+
+                        <option value="30">
+                            30 ml - ₹499
+                        </option>
+
+                        <option value="50">
+                            50 ml - ₹699
+                        </option>
+
+                        <option value="100">
+                            100 ml - ₹999
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- QUANTITY -->
+
+                <div class="form-group">
+
+                    <label>
+                        Quantity
+                    </label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        value="1"
+                        min="1"
+                        max="10"
+                    >
+
+                </div>
+
+
+                <button
+                    class="create-btn"
+                    onclick="createPerfume()">
+
+                    Add My Perfume to Cart
+
+                </button>
+
+            </div>
+
+
+            <!-- =========================
+                 PREVIEW
+            ========================== -->
+
+            <div class="perfume-preview">
+
+                <h2>
+                    Your Perfume
+                </h2>
+
+
+                <div class="preview-bottle">
+
+                    <div class="preview-cap"></div>
+
+                    <div class="preview-body">
+
+                        <span id="previewName">
+                            MY PERFUME
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="preview-details">
+
+                    <p>
+                        <strong>Fragrance:</strong>
+
+                        <span id="previewFragrance">
+                            Floral
+                        </span>
+                    </p>
+
+
+                    <p>
+                        <strong>Scent:</strong>
+
+                        <span id="previewScent">
+                            Rose
+                        </span>
+                    </p>
+
+
+                    <p>
+                        <strong>Size:</strong>
+
+                        <span id="previewSize">
+                            30 ml
+                        </span>
+                    </p>
+
+
+                    <p class="preview-price">
+
+                        ₹<span id="previewPrice">
+                            499
+                        </span>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 MyPerfume. All rights reserved.
+
+    </footer>
+
+
+    <script src="js/customize.js"></script>
+
+</body>
+
+</html>

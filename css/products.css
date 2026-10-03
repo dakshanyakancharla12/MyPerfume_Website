@@ -1,0 +1,495 @@
+/* =========================================
+   SHOP HEADER
+========================================= */
+
+.shop-header {
+    text-align: center;
+    padding: 55px 20px 30px;
+}
+
+.small-title {
+    color: #b06b6b;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.shop-header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #3d2929;
+}
+
+.shop-header p:last-child {
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   FILTER
+========================================= */
+
+.filter-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 10px 22px;
+    margin: 5px;
+
+    border: 1px solid #d8b4b4;
+
+    background: white;
+
+    color: #6d4a4a;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #b97878;
+    color: white;
+}
+
+
+/* =========================================
+   PRODUCTS GRID
+========================================= */
+
+.products-container {
+    width: 90%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.product-card {
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(80, 40, 40, 0.08);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(80, 40, 40, 0.13);
+}
+
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.product-image {
+    height: 250px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.pink {
+    background: #f9e1e5;
+}
+
+.cream {
+    background: #f7ecd9;
+}
+
+.lavender {
+    background: #e8e0f2;
+}
+
+.brown {
+    background: #ead9ce;
+}
+
+
+/* =========================================
+   PERFUME BOTTLE
+========================================= */
+
+.perfume-bottle {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.cap {
+    width: 52px;
+    height: 32px;
+
+    background: #d7a06d;
+
+    border-radius: 5px 5px 2px 2px;
+}
+
+.bottle {
+    width: 110px;
+    height: 145px;
+
+    border-radius: 15px 15px 25px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.85),
+            rgba(232,160,170,0.8)
+        );
+
+    border: 3px solid rgba(255,255,255,0.8);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 12px 20px rgba(80,40,40,0.15);
+}
+
+.bottle span {
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    color: #5c3d3d;
+
+    padding: 5px;
+}
+
+
+/* =========================================
+   WISHLIST
+========================================= */
+
+.wishlist-btn {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #a85c65;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.1);
+
+    transition: 0.2s;
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.08);
+
+    background: #fff4f4;
+}
+
+
+/* =========================================
+   PRODUCT INFO
+========================================= */
+
+.product-info {
+    padding: 19px;
+}
+
+.category {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #b06b6b;
+
+    font-weight: 600;
+}
+
+.product-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+
+    margin: 5px 0;
+
+    color: #3d2929;
+}
+
+.rating {
+    color: #d49a52;
+
+    margin: 7px 0;
+
+    font-size: 13px;
+}
+
+.description {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    min-height: 36px;
+}
+
+
+/* =========================================
+   PRICE + BUTTON
+========================================= */
+
+.product-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 16px;
+}
+
+.price {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #4b3030;
+}
+
+.product-bottom button {
+    border: none;
+
+    padding: 9px 13px;
+
+    border-radius: 20px;
+
+    background: #a96767;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.product-bottom button:hover {
+    background: #865151;
+}
+
+
+/* =========================================
+   CUSTOMIZE BANNER
+========================================= */
+
+.customize-banner {
+    width: 86%;
+
+    margin: 75px auto 50px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #f8e5e5,
+            #f7eee5
+        );
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.customize-banner h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #3d2929;
+
+    margin: 5px 0;
+}
+
+.customize-banner p:not(.small-title) {
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.customize-banner a {
+    background: #a96767;
+
+    color: white;
+
+    padding: 13px 22px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.customize-banner a:hover {
+    background: #865151;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 18px;
+    }
+
+    .shop-header h1 {
+        font-size: 34px;
+    }
+
+    .customize-banner {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-header {
+        padding-top: 40px;
+    }
+
+    .shop-header h1 {
+        font-size: 30px;
+    }
+
+    .filter-btn {
+        padding: 8px 17px;
+
+        font-size: 13px;
+    }
+
+    .customize-banner {
+        width: 90%;
+
+        padding: 30px 20px;
+    }
+
+}
+
+/* =========================================
+   FILLED WISHLIST HEART
+========================================= */
+
+.wishlist-btn.added {
+    color: #9b5d61;
+    font-weight: bold;
+}
+
+.product-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.add-cart-btn.added {
+    background: #6b8e6b;
+    color: white;
+}

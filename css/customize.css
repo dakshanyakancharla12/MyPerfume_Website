@@ -1,0 +1,181 @@
+/* =================================
+   MYPERFUME - CUSTOMIZE
+================================= */
+
+.customize-page {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto 50px;
+}
+
+.customize-header {
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.customize-header h1 {
+    color:#6d4848;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.customize-header p {
+    color:#777;
+    font-size:15px;
+}
+
+.customize-container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+.customize-form,
+.perfume-preview {
+    background:white;
+    border:1px solid #f0dddd;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.06);
+}
+
+.form-group {
+    margin-bottom:20px;
+}
+
+.form-group label {
+    display:block;
+    color:#5c4646;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.form-group input,
+.form-group select {
+    width:100%;
+    padding:11px 13px;
+    border:1px solid #dfcaca;
+    border-radius:10px;
+    background:#fffaf8;
+    color:#5c4646;
+    font-family:inherit;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color:#b06b6b;
+}
+
+.create-btn {
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:25px;
+    background:#b06b6b;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.create-btn:hover {
+    background:#9b5d61;
+}
+
+
+/* =================================
+   PREVIEW
+================================= */
+
+.perfume-preview {
+    text-align:center;
+}
+
+.perfume-preview h2 {
+    color:#6d4848;
+    margin-bottom:25px;
+}
+
+.preview-bottle {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.preview-cap {
+    width:45px;
+    height:30px;
+    background:#6d4848;
+    border-radius:7px 7px 2px 2px;
+}
+
+.preview-body {
+    width:130px;
+    height:180px;
+    background:#fff5f5;
+    border:2px solid #d9aaaa;
+    border-radius:12px 12px 20px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+}
+
+.preview-body span {
+    color:#9b5d61;
+    font-size:14px;
+    font-weight:bold;
+    word-break:break-word;
+}
+
+.preview-details {
+    border-top:1px solid #eee;
+    padding-top:20px;
+}
+
+.preview-details p {
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:12px;
+    color:#666;
+}
+
+.preview-price {
+    color:#9b5d61 !important;
+    font-size:22px;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width:700px) {
+
+    .customize-page {
+        width:92%;
+        margin:30px auto;
+    }
+
+    .customize-container {
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ==============================
+   CUSTOMIZE PAGE BACKGROUND
+================================= */
+
+body {
+    background-image: url("../images/banners/customize-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

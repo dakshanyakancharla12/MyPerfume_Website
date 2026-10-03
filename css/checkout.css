@@ -1,0 +1,278 @@
+/* =================================
+   MYPERFUME - CHECKOUT
+================================= */
+
+.checkout-page {
+    width:90%;
+    max-width:1100px;
+    margin:55px auto;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.checkout-header {
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.checkout-header p {
+    color:#b06b6b;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:3px;
+    margin-bottom:8px;
+}
+
+.checkout-header h1 {
+    color:#4d3636;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.checkout-header span {
+    color:#777;
+    font-size:14px;
+}
+
+
+/* =================================
+   CONTAINER
+================================= */
+
+.checkout-container {
+    display:grid;
+    grid-template-columns:1.3fr 0.7fr;
+    gap:30px;
+}
+
+
+/* =================================
+   CARDS
+================================= */
+
+.checkout-card,
+.order-card {
+    background:white;
+    border:1px solid #f0dddd;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.06);
+}
+
+.checkout-card h2,
+.order-card h2 {
+    color:#5c4040;
+    font-size:21px;
+    margin-bottom:25px;
+}
+
+
+/* =================================
+   FORM
+================================= */
+
+.form-group {
+    margin-bottom:18px;
+}
+
+.form-group label {
+    display:block;
+    color:#666;
+    font-size:13px;
+    margin-bottom:7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width:100%;
+    box-sizing:border-box;
+
+    padding:11px 12px;
+
+    border:1px solid #e1cccc;
+    border-radius:9px;
+
+    background:#fffaf8;
+
+    color:#4d3636;
+
+    font-family:inherit;
+    font-size:14px;
+
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color:#b06b6b;
+    background:white;
+}
+
+.form-group textarea {
+    min-height:80px;
+    resize:vertical;
+}
+
+
+/* =================================
+   FORM ROW
+================================= */
+
+.form-row {
+    display:grid;
+    grid-template-columns:1fr 1fr 0.7fr;
+    gap:15px;
+}
+
+
+/* =================================
+   ORDER ITEMS
+================================= */
+
+.order-items {
+    border-top:1px solid #eee;
+}
+
+.order-item {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #eee;
+}
+
+.order-item h3 {
+    color:#4d3636;
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+.order-item p {
+    color:#888;
+    font-size:13px;
+}
+
+.order-item strong {
+    color:#8f5c5c;
+    font-size:14px;
+}
+
+
+/* =================================
+   TOTAL
+================================= */
+
+.order-total {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:20px;
+    padding-top:20px;
+
+    border-top:1px solid #ddd;
+
+    color:#4d3636;
+}
+
+.order-total strong {
+    color:#9b5d61;
+    font-size:22px;
+}
+
+
+/* =================================
+   PLACE ORDER
+================================= */
+
+.place-order-btn {
+    width:100%;
+
+    margin-top:25px;
+
+    padding:13px;
+
+    border:none;
+    border-radius:25px;
+
+    background:#b06b6b;
+    color:white;
+
+    font-family:inherit;
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.place-order-btn:hover {
+    background:#9b5d61;
+}
+
+
+/* =================================
+   BACK TO CART
+================================= */
+
+.back-cart {
+    display:block;
+
+    margin-top:18px;
+
+    text-align:center;
+
+    color:#8b5b5b;
+
+    font-size:13px;
+
+    text-decoration:none;
+}
+
+.back-cart:hover {
+    color:#b06b6b;
+}
+
+
+/* =================================
+   EMPTY ORDER
+================================= */
+
+.empty-order {
+    padding:20px 0;
+    color:#888;
+    text-align:center;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width:800px) {
+
+    .checkout-page {
+        width:92%;
+        margin:35px auto;
+    }
+
+    .checkout-container {
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+@media (max-width:600px) {
+
+    .form-row {
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+}

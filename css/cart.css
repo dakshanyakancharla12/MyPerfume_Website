@@ -1,0 +1,307 @@
+/* =================================
+   MYPERFUME - CART
+================================= */
+
+.cart-page {
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+}
+
+
+/* =================================
+   CART HEADER
+================================= */
+
+.cart-header {
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.cart-header h1 {
+    color:#6d4848;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.cart-header p {
+    color:#777;
+    font-size:15px;
+}
+
+
+/* =================================
+   CART CONTAINER
+================================= */
+
+.cart-container {
+    display:grid;
+    gap:20px;
+}
+
+
+/* =================================
+   CART CARD
+================================= */
+
+.cart-card {
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding:20px;
+    background:white;
+    border:1px solid #f0dddd;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.06);
+}
+
+
+/* =================================
+   CART IMAGE
+================================= */
+
+.cart-image {
+    width:110px;
+    height:120px;
+    border-radius:12px;
+    background:#f8e5e5;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.cart-cap {
+    width:25px;
+    height:18px;
+    background:#6d4848;
+    border-radius:5px 5px 2px 2px;
+}
+
+.cart-bottle {
+    width:55px;
+    height:65px;
+    background:#fff;
+    border:2px solid #d9aaaa;
+    border-radius:8px 8px 12px 12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#9b5d61;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+/* =================================
+   CART INFO
+================================= */
+
+.cart-info {
+    flex:1;
+}
+
+.cart-category {
+    color:#b06b6b;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:6px;
+}
+
+.cart-info h2 {
+    color:#4d3636;
+    font-size:21px;
+    margin-bottom:8px;
+}
+
+.cart-price {
+    color:#8f5c5c;
+    font-size:17px;
+    font-weight:600;
+}
+
+
+/* =================================
+   REMOVE BUTTON
+================================= */
+
+.remove-cart-btn {
+    border:1px solid #d7aaaa;
+    background:white;
+    color:#9b5d61;
+    padding:9px 17px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.remove-cart-btn:hover {
+    background:#b06b6b;
+    color:white;
+}
+
+
+/* =================================
+   EMPTY CART
+================================= */
+
+.empty-cart {
+    display:none;
+    text-align:center;
+    padding:60px 20px;
+    background:white;
+    border:1px solid #f0dddd;
+    border-radius:15px;
+}
+
+.empty-cart h2 {
+    color:#6d4848;
+    margin-bottom:10px;
+}
+
+.empty-cart p {
+    color:#777;
+    margin-bottom:20px;
+}
+
+.empty-cart a {
+    display:inline-block;
+    text-decoration:none;
+    background:#b06b6b;
+    color:white;
+    padding:10px 22px;
+    border-radius:22px;
+}
+
+
+/* =================================
+   CART SUMMARY
+================================= */
+
+.cart-summary {
+    margin-top:30px;
+    margin-left:auto;
+    width:350px;
+    padding:25px;
+    background:white;
+    border:1px solid #f0dddd;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.06);
+}
+
+.summary-row {
+    display:flex;
+    justify-content:space-between;
+    color:#666;
+    margin-bottom:15px;
+}
+
+.total-row {
+    border-top:1px solid #eee;
+    padding-top:15px;
+    color:#4d3636;
+    font-size:19px;
+    font-weight:600;
+}
+
+
+/* =================================
+   CHECKOUT BUTTON
+================================= */
+
+.checkout-btn {
+    width:100%;
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#b06b6b;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.checkout-btn:hover {
+    background:#9b5d61;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width:700px) {
+
+    .cart-page {
+        width:92%;
+        margin:30px auto;
+    }
+
+    .cart-card {
+        flex-wrap:wrap;
+    }
+
+    .cart-info {
+        min-width:150px;
+    }
+
+    .remove-cart-btn {
+        margin-left:auto;
+    }
+
+    .cart-summary {
+        width:100%;
+    }
+
+}
+
+/* =================================
+   QUANTITY
+================================= */
+
+.quantity-box {
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:12px;
+}
+
+.quantity-btn {
+    width:30px;
+    height:30px;
+    border:1px solid #d7aaaa;
+    background:white;
+    color:#9b5d61;
+    border-radius:50%;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.quantity-btn:hover {
+    background:#b06b6b;
+    color:white;
+}
+
+.quantity {
+    min-width:25px;
+    text-align:center;
+    font-weight:600;
+    color:#5c4646;
+}
+
+.item-total {
+    margin-top:10px;
+    color:#8f5c5c;
+    font-size:14px;
+    font-weight:600;
+}
+
+.cart-product-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

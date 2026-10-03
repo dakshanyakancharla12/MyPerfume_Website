@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MyPerfume - Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ✦ MyPerfume
+        </div>
+
+        <nav>
+
+            <a href="home.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Shop
+            </a>
+
+            <a href="customize.html">
+                Customize
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="cart.html">
+                🛒
+                <span id="cartCount">0</span>
+            </a>
+
+            <a href="profile.html" class="active">
+                Profile
+            </a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================================
+         PROFILE
+    ================================= -->
+
+    <main class="profile-page">
+
+        <div class="profile-header">
+
+            <p>YOUR ACCOUNT</p>
+
+            <h1>My Profile</h1>
+
+            <span>
+                Manage your MyPerfume account.
+            </span>
+
+        </div>
+
+
+        <div class="profile-card">
+
+            <!-- PROFILE ICON -->
+
+            <div class="profile-icon">
+                👤
+            </div>
+
+
+            <!-- PROFILE DETAILS -->
+
+            <div class="profile-details">
+
+
+                <!-- NAME -->
+
+                <div class="profile-row">
+
+                    <label>
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profileName"
+                        disabled
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="profile-row">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="profileEmail"
+                        disabled
+                    >
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="profile-row">
+
+                    <label>
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="profilePhone"
+                        placeholder="Enter phone number"
+                        disabled
+                    >
+
+                </div>
+
+
+                <!-- COUNTRY -->
+
+                <div class="profile-row">
+
+                    <label>
+                        Country
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profileCountry"
+                        placeholder="Enter country"
+                        disabled
+                    >
+
+                </div>
+
+
+                <!-- ADDRESS -->
+
+                <div class="profile-row">
+
+                    <label>
+                        Address
+                    </label>
+
+                    <textarea
+                        id="profileAddress"
+                        placeholder="Enter your address"
+                        disabled
+                    ></textarea>
+
+                </div>
+
+
+                <!-- CITY -->
+
+                <div class="profile-row">
+
+                    <label>
+                        City
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profileCity"
+                        placeholder="Enter city"
+                        disabled
+                    >
+
+                </div>
+
+
+                <!-- STATE -->
+
+                <div class="profile-row">
+
+                    <label>
+                        State
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profileState"
+                        placeholder="Enter state"
+                        disabled
+                    >
+
+                </div>
+
+
+                <!-- PIN -->
+
+                <div class="profile-row">
+
+                    <label>
+                        PIN Code
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profilePin"
+                        placeholder="Enter PIN code"
+                        disabled
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="profile-actions">
+
+                <button
+                    id="editProfileBtn"
+                    class="edit-profile-btn">
+
+                    Edit Profile
+
+                </button>
+
+
+                <button
+                    id="saveProfileBtn"
+                    class="save-profile-btn"
+                    style="display:none;">
+
+                    Save Changes
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 MyPerfume. All rights reserved.
+
+    </footer>
+
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

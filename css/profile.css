@@ -1,0 +1,317 @@
+/* =================================
+   MYPERFUME - PROFILE
+================================= */
+
+.profile-page {
+    width:90%;
+    max-width:850px;
+    margin:55px auto;
+}
+
+
+/* =================================
+   PROFILE HEADER
+================================= */
+
+.profile-header {
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.profile-header p {
+    color:#b06b6b;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:3px;
+    margin-bottom:8px;
+}
+
+.profile-header h1 {
+    color:#4d3636;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.profile-header span {
+    color:#777;
+    font-size:14px;
+}
+
+
+/* =================================
+   PROFILE CARD
+================================= */
+
+.profile-card {
+    background:rgb(245, 239, 228);
+    border:1px solid #f0dddd;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.06);
+}
+
+
+/* =================================
+   PROFILE ICON
+================================= */
+
+.profile-icon {
+    width:70px;
+    height:70px;
+
+    margin:0 auto 30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#f5e1e1;
+
+    font-size:30px;
+}
+
+
+/* =================================
+   PROFILE DETAILS
+================================= */
+
+.profile-details {
+    max-width:650px;
+    margin:auto;
+}
+
+
+/* =================================
+   PROFILE ROW
+================================= */
+
+.profile-row {
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #eee;
+}
+
+
+.profile-row label {
+    width:150px;
+
+    flex-shrink:0;
+
+    color:#777;
+
+    font-size:14px;
+}
+
+
+/* =================================
+   INPUTS
+================================= */
+
+.profile-row input,
+.profile-row textarea {
+
+    flex:1;
+
+    padding:10px 12px;
+
+    border:1px solid transparent;
+
+    border-radius:8px;
+
+    background:#fffaf8;
+
+    color:#4d3636;
+
+    font-family:inherit;
+
+    font-size:14px;
+
+    outline:none;
+
+}
+
+
+.profile-row input:disabled,
+.profile-row textarea:disabled {
+
+    background:#fffaf8;
+
+    color:#4d3636;
+
+    cursor:default;
+
+}
+
+
+.profile-row input:not(:disabled),
+.profile-row textarea:not(:disabled) {
+
+    border-color:#dcbaba;
+
+    background:white;
+
+}
+
+
+.profile-row input:focus,
+.profile-row textarea:focus {
+
+    border-color:#b06b6b;
+
+}
+
+
+.profile-row textarea {
+
+    min-height:70px;
+
+    resize:vertical;
+
+}
+
+
+/* =================================
+   ACTION BUTTONS
+================================= */
+
+.profile-actions {
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+
+
+.edit-profile-btn,
+.save-profile-btn {
+
+    padding:10px 28px;
+
+    border-radius:22px;
+
+    font-family:inherit;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+/* EDIT */
+
+.edit-profile-btn {
+
+    border:1px solid #c99595;
+
+    background:white;
+
+    color:#8b5b5b;
+
+}
+
+
+.edit-profile-btn:hover {
+
+    background:#b06b6b;
+
+    border-color:#b06b6b;
+
+    color:rgb(213, 179, 209);
+
+}
+
+
+/* SAVE */
+
+.save-profile-btn {
+
+    border:1px solid #b06b6b;
+
+    background:#b06b6b;
+
+    color:white;
+
+}
+
+
+.save-profile-btn:hover {
+
+    background:#9b5d61;
+
+    border-color:#9b5d61;
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width:700px) {
+
+    .profile-page {
+
+        width:92%;
+
+        margin:35px auto;
+
+    }
+
+
+    .profile-card {
+
+        padding:25px 20px;
+
+    }
+
+
+    .profile-row {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:7px;
+
+    }
+
+
+    .profile-row label {
+
+        width:auto;
+
+    }
+
+
+    .profile-row input,
+    .profile-row textarea {
+
+        width:100%;
+
+        box-sizing:border-box;
+
+    }
+
+}
+
+/* ==============================
+   PROFILE PAGE BACKGROUND
+================================= */
+
+body {
+    background-image: url("../images/banners/profile-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

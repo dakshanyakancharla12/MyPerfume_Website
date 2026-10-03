@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | MyPerfume</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">✦ MyPerfume</div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html" class="active">Shop</a>
+            <a href="customize.html">Customize</a>
+            <a href="wishlist.html">Wishlist</a>
+
+            <a href="cart.html" id="cartLink">
+                🛒 <span id="cartCount">0</span>
+            </a>
+
+            <a href="profile.html">👤 <span id="userName">Profile</span></a>
+
+            <button id="logoutBtn">Logout</button>
+        </nav>
+
+    </header>
+
+
+    <!-- SHOP HEADER -->
+    <section class="shop-header">
+
+        <p class="small-title">DISCOVER YOUR SCENT</p>
+
+        <h1>Our Perfume Collection</h1>
+
+        <p>
+            Explore beautiful fragrances crafted for every mood,
+            personality and occasion.
+        </p>
+
+    </section>
+
+
+    <!-- FILTER -->
+    <section class="filter-section">
+
+        <button class="filter-btn active" onclick="filterProducts('all', this)">
+            All
+        </button>
+
+        <button class="filter-btn" onclick="filterProducts('floral', this)">
+            Floral
+        </button>
+
+        <button class="filter-btn" onclick="filterProducts('sweet', this)">
+            Sweet
+        </button>
+
+        <button class="filter-btn" onclick="filterProducts('woody', this)">
+            Woody
+        </button>
+
+        <button class="filter-btn" onclick="filterProducts('fresh', this)">
+            Fresh
+        </button>
+
+    </section>
+
+
+    <!-- PRODUCTS WILL BE CREATED BY JAVASCRIPT -->
+    <section class="products-container" id="productsContainer">
+    </section>
+
+
+    <!-- CUSTOMIZE BANNER -->
+    <section class="customize-banner">
+
+        <div>
+
+            <p class="small-title">MAKE IT YOURS</p>
+
+            <h2>Create Your Own Perfume</h2>
+
+            <p>
+                Choose your fragrance, bottle style and create
+                a scent that feels uniquely yours.
+            </p>
+
+        </div>
+
+        <a href="customize.html">
+            Customize Now →
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 MyPerfume |
+            Create Your Own Signature Scent.
+        </p>
+
+    </footer>
+
+
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>
